@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Weather</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row weather">
+        <div class="col-md-12">
+          <div id="about"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <button type="button" id="left" class="btn btn-primary">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Last
+          </button>
+        </div>
+        <div class="col-md-6">
+          <button type="button" id="right" class="btn btn-primary">
+            Next <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <iframe width="70%" height="300" frameborder="0" scrolling="no" marginheight="0" src="https://maps.google.com/maps?q=Львівський Національний Академічний театр опери та балету ім. Соломії Крушельницької, &t=&z=18&ie=UTF8&iwloc=&output=embed" marginwidth="0"><a class="addmaps" href="http://minimalist-wordpress-themes.org"id="get-map-data" mce_href="http://maps.google.com/maps/">Львівський Національний Академічний театр опери та балету ім. Соломії Крушельницької, </a><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><a class="addmaps" href="http://www.map-embed.com/wordpress-themes/"id="get-map-data" mce_href="http://maps.google.com/maps/api/js?sensor=false">Львівський Національний Академічний театр опери та балету ім. Соломії Крушельницької </a></iframe>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="app.js"></script> 
+  </body>
+</html>
