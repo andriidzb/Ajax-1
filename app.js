@@ -22,6 +22,8 @@ var currentDate = new Date;
 
 var newDate = Date.parse(currentDate) / 1000;
 
+var forCheck = newDate;
+
 $('#left').on('click', function() {
 	newDate -= 24 * 60 * 60;
 
@@ -42,8 +44,6 @@ $('#left').on('click', function() {
 		$('#about')[0].innerText = date + " temperature: " + tempC + " °C";
 
 		$('#right').removeAttr("disabled");
-
-		console.log(data);
 
   })
 });
@@ -66,13 +66,13 @@ $('#right').on('click', function() {
 
     var date = new Date(data.currently.time * 1000);
 
-    console.log(data);
+    var checkDate = date / 1000;
 
 		$('#about')[0].innerText = date + " temperature: " + tempC + " °C";
 
-		if(date > currentDate) {
-			$('#right').attr("disabled","disabled");
-		}
+    if(checkDate >= forCheck) {
+      $('#right').attr("disabled","disabled");
+    }
 
   })
 });
